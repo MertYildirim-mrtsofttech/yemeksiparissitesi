@@ -76,6 +76,7 @@ function LoginForm() {
             <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">E-posta</label>
             <input
               type="email"
+              placeholder="@"
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -88,6 +89,7 @@ function LoginForm() {
             <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">Şifre</label>
             <input
               type="password"
+              placeholder="🔒"
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}

@@ -5,7 +5,7 @@ export default function BannerManagement() {
   const [banners, setBanners] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [formMode, setFormMode] = useState('add'); // 'add' or 'edit'
+  const [formMode, setFormMode] = useState('add'); 
   const [currentBanner, setCurrentBanner] = useState(null);
   
   const [formData, setFormData] = useState({
@@ -167,7 +167,7 @@ export default function BannerManagement() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="title">
-                Başlık*
+                📌Başlık*
               </label>
               <input
                 id="title"
@@ -182,7 +182,7 @@ export default function BannerManagement() {
             
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="imageUrl">
-                Görsel URL*
+                🔗Görsel URL*
               </label>
               <input
                 id="imageUrl"
@@ -197,7 +197,7 @@ export default function BannerManagement() {
             
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="description">
-                Açıklama
+                ℹ️Açıklama
               </label>
               <textarea
                 id="description"
@@ -211,7 +211,7 @@ export default function BannerManagement() {
             
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="linkUrl">
-                Bağlantı URL
+                🌐Bağlantı URL
               </label>
               <input
                 id="linkUrl"
@@ -225,7 +225,7 @@ export default function BannerManagement() {
             
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="order">
-                Sıra
+                ⚙️Sıra
               </label>
               <input
                 id="order"

@@ -35,7 +35,6 @@ export default function ChatBox({ onSendMessage, placeholder = "Mesajınızı ya
     
     await onSendMessage(message, uploadedImagePath);
     
-    // Form alanlarını temizle
     setMessage('');
     setImageFile(null);
     setImagePreview('');
@@ -63,7 +62,7 @@ export default function ChatBox({ onSendMessage, placeholder = "Mesajınızı ya
     }
     
     const data = await response.json();
-    return data.filePath; // API'nin döndürdüğü dosya yolunu döndür
+    return data.filePath; 
   };
   
   
@@ -116,7 +115,7 @@ export default function ChatBox({ onSendMessage, placeholder = "Mesajınızı ya
 
   return (
     <div  className="w-full">
-      {/* Resim yükleme alanı - Her zaman görünür olacak şekilde düzenlendi */}
+      {}
      
         <div id="imgsndbtn" className="flex flex-col items-center justify-center">
           <label
@@ -170,7 +169,7 @@ export default function ChatBox({ onSendMessage, placeholder = "Mesajınızı ya
         />
         
         {/* Gönder butonu */}
-        <button
+        <button id="sndbtn"
           type="submit"
           className={`bg-orange-500 text-white px-4 py-2 rounded-r-md hover:bg-orange-600 transition-colors flex items-center ${uploading ? 'opacity-60 cursor-not-allowed' : ''}`}
           disabled={uploading}
@@ -186,7 +185,7 @@ export default function ChatBox({ onSendMessage, placeholder = "Mesajınızı ya
               Yükleniyor
             </>
           ) : (
-            'Gönder'
+            '➤'
           )}
         </button>
       </form>

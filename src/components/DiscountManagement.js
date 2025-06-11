@@ -157,18 +157,18 @@ export default function DiscountManagement() {
         <form onSubmit={handleSubmit} className="space-y-6 mb-6">
 
           <div>
-            <label className="block mb-1">İndirim Kodu</label>
+            <label className="block mb-1">🏷️İndirim Kodu</label>
             <input type="text" name="code" value={formData.code} onChange={handleChange} required className="w-full px-3 py-2 border rounded" />
           </div>
 
           <div>
-            <label className="block mb-1">Açıklama</label>
+            <label className="block mb-1">ℹ️Açıklama</label>
             <input type="text" name="description" value={formData.description} onChange={handleChange} className="w-full px-3 py-2 border rounded" />
           </div>
 
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label className="block mb-1">İndirim Tutarı</label>
+              <label className="block mb-1">🔖İndirim Tutarı</label>
               <input type="number" name="amount" value={formData.amount} onChange={handleChange} required className="w-full px-3 py-2 border rounded" />
             </div>
             <div className="flex items-center mt-6">
@@ -179,28 +179,28 @@ export default function DiscountManagement() {
 
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label className="block mb-1">Minimum Sipariş Tutarı</label>
+              <label className="block mb-1">💲Minimum Sipariş Tutarı</label>
               <input type="number" name="minOrderAmount" value={formData.minOrderAmount} onChange={handleChange} className="w-full px-3 py-2 border rounded" />
             </div>
             <div>
-              <label className="block mb-1">Maksimum Kullanım</label>
+              <label className="block mb-1">💵Maksimum Kullanım</label>
               <input type="number" name="maxUses" value={formData.maxUses} onChange={handleChange} className="w-full px-3 py-2 border rounded" />
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label className="block mb-1">Başlangıç Tarihi</label>
+              <label className="block mb-1">📆Başlangıç Tarihi</label>
               <input type="date" name="startDate" value={formData.startDate} onChange={handleChange} required className="w-full px-3 py-2 border rounded" />
             </div>
             <div>
-              <label className="block mb-1">Bitiş Tarihi</label>
+              <label className="block mb-1">🗓️Bitiş Tarihi</label>
               <input type="date" name="endDate" value={formData.endDate} onChange={handleChange} required className="w-full px-3 py-2 border rounded" />
             </div>
           </div>
 
           <div>
-            <label className="block mb-1">Ürün Seçimi</label>
+            <label className="block mb-1">📦Ürün Seçimi</label>
             <input type="text" placeholder="Ürün ara..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} className="mb-2 px-3 py-2 border rounded-md w-full" />
 
             <label className="flex items-center space-x-2 mb-2">

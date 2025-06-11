@@ -95,6 +95,7 @@ export default function UserRegister() {
               <input
                 type="text"
                 id="firstName"
+                placeholder="👤"
                 name="firstName"
                 value={formData.firstName}
                 onChange={handleChange}
@@ -108,6 +109,7 @@ export default function UserRegister() {
               <input
                 type="text"
                 id="lastName"
+                placeholder="👤"
                 name="lastName"
                 value={formData.lastName}
                 onChange={handleChange}
@@ -122,6 +124,7 @@ export default function UserRegister() {
             <input
               type="email"
               id="email"
+              placeholder="@"
               name="email"
               value={formData.email}
               onChange={handleChange}
@@ -135,6 +138,7 @@ export default function UserRegister() {
             <input
               type="tel"
               id="phone"
+              placeholder="📞"
               name="phone"
               value={formData.phone}
               onChange={handleChange}
@@ -148,6 +152,7 @@ export default function UserRegister() {
             <textarea
               id="address"
               name="address"
+              placeholder="🏠"
               value={formData.address}
               onChange={handleChange}
               rows="3"
@@ -161,6 +166,7 @@ export default function UserRegister() {
             <input
               type="password"
               id="password"
+              placeholder="🔒"
               name="password"
               value={formData.password}
               onChange={handleChange}
@@ -174,6 +180,7 @@ export default function UserRegister() {
             <input
               type="password"
               id="confirmPassword"
+              placeholder="🔒"
               name="confirmPassword"
               value={formData.confirmPassword}
               onChange={handleChange}

@@ -55,6 +55,7 @@ export default function AdminLogin() {
             <input
               type="email"
               id="email"
+              placeholder="@"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
@@ -67,6 +68,7 @@ export default function AdminLogin() {
             <input
               type="password"
               id="password"
+              placeholder="🔒"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"

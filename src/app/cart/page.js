@@ -14,7 +14,7 @@ export default function CartPage() {
   if (cart.length === 0) {
     return (
       <div className="text-center py-10">
-        <h1 className="text-2xl font-bold mb-4">Sepetiniz</h1>
+        <h1 className="text-2xl font-bold mb-4">🛒Sepetiniz</h1>
         <p className="text-gray-500 mb-4">Sepetiniz boş.</p>
         <Link 
           href="/"

@@ -19,7 +19,7 @@ export default function Navbar() {
           href="/" 
           className="text-2xl font-bold text-orange-500 hover:text-orange-600 transition-colors duration-200"
         >
-          <span id="logotext">YemekSipariş</span>
+          <span id="logotext">Yemek`♡´Sipariş</span>
         </Link>
         {/* Menü Linkleri */}
         <div className="flex items-center gap-4 text-sm font-medium text-gray-700">

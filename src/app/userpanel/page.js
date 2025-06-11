@@ -105,7 +105,7 @@ export default function UserPanel() {
                   : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
               } rounded-l-lg focus:z-10 focus:ring-2 focus:ring-orange-300`}
             >
-              Ana Panel
+              🖥️Ana Panel
             </button>
             <button
               type="button"
@@ -116,7 +116,7 @@ export default function UserPanel() {
                   : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
               } focus:z-10 focus:ring-2 focus:ring-orange-300`}
             >
-              Sipariş Geçmişim
+              📦Sipariş Geçmişim
             </button>
             <button
               type="button"
@@ -127,7 +127,7 @@ export default function UserPanel() {
                   : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
               } focus:z-10 focus:ring-2 focus:ring-orange-300`}
             >
-              Genel Sohbet
+              🗫 Genel Sohbet
             </button>
             <button
               type="button"
@@ -138,7 +138,7 @@ export default function UserPanel() {
                   : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
               } rounded-r-md focus:z-10 focus:ring-2 focus:ring-orange-300`}
             >
-              Özel Mesajlar
+              🗪 Özel Mesajlar
             </button>
           </div>
         </div>
@@ -147,13 +147,13 @@ export default function UserPanel() {
         {activeTab === 'panel' && (
           <div className="bg-white shadow-lg rounded-lg p-8">
             <div className="mb-6">
-              <h2 className="text-xl font-semibold mb-4">Hoş Geldiniz, {displayName}</h2>
+              <h2 className="text-xl font-semibold mb-4">👋 | Hoş Geldiniz, {displayName}</h2>
               <p className="text-gray-600 mb-6">Hesabınızla ilgili işlemleri aşağıdaki butonlardan gerçekleştirebilirsiniz.</p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-medium mb-3">Sepet İşlemleri</h3>
+                <h3 className="text-lg font-medium mb-3">🛒Sepet İşlemleri</h3>
                 <p className="text-gray-600 mb-4">Sepetinizdeki ürünleri görüntüleyin ve satın alma işlemlerini gerçekleştirin.</p>
                 <button 
                   onClick={() => router.push('/cart')}
@@ -164,7 +164,7 @@ export default function UserPanel() {
               </div>
               
               <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-medium mb-3">Kullanıcı Bilgileriniz</h3>
+                <h3 className="text-lg font-medium mb-3">⚙️Kullanıcı Bilgileriniz</h3>
                 <p className="text-gray-600 mb-4">Kişisel bilgilerinizi güncelleyin ve hesap ayarlarınızı yönetin.</p>
                 <button 
                   onClick={() => router.push('/userinfo')}
@@ -175,7 +175,7 @@ export default function UserPanel() {
               </div>
               
               <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-medium mb-3">Sipariş Geçmişim</h3>
+                <h3 className="text-lg font-medium mb-3">📦Sipariş Geçmişim</h3>
                 <p className="text-gray-600 mb-4">Önceki siparişlerinizi görüntüleyin ve takip edin.</p>
                 <button 
                   onClick={() => setActiveTab('orders')}
@@ -186,7 +186,7 @@ export default function UserPanel() {
               </div>
               
               <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-medium mb-3">Mesajlaşma</h3>
+                <h3 className="text-lg font-medium mb-3">📩Mesajlaşma</h3>
                 <p className="text-gray-600 mb-4">Diğer kullanıcılarla mesajlaşmak için mesajlaşma sekmelerini kullanabilirsiniz.</p>
                 <div className="grid grid-cols-2 gap-4">
                   <button 

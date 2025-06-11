@@ -40,7 +40,7 @@ export default function AdminPanel() {
           <div className="flex justify-between h-16">
             <div className="flex">
               <div className="flex-shrink-0 flex items-center">
-                <h1 className="text-xl font-bold">Yönetici Paneli</h1>
+                <h1 className="text-xl font-bold">🛡️Yönetici Paneli</h1>
               </div>
             </div>
             <div className="flex items-center">
@@ -72,7 +72,7 @@ export default function AdminPanel() {
                   : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
               } rounded-l-lg focus:z-10 focus:ring-2 focus:ring-orange-300`}
             >
-              Ana Panel
+              🖥️Ana Panel
             </button>
             <button
               type="button"
@@ -83,7 +83,7 @@ export default function AdminPanel() {
                   : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
               } focus:z-10 focus:ring-2 focus:ring-orange-300`}
             >
-              Genel Sohbet
+              🗫️ Genel Sohbet
             </button>
             <button
               type="button"
@@ -94,7 +94,7 @@ export default function AdminPanel() {
                   : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
               } rounded-r-md focus:z-10 focus:ring-2 focus:ring-orange-300`}
             >
-              Özel Mesajlar
+              🗪 Özel Mesajlar
             </button>
 
             <button
@@ -106,7 +106,7 @@ export default function AdminPanel() {
                   : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
               } focus:z-10 focus:ring-2 focus:ring-orange-300`}
             >
-              Banner Yönetimi
+              📢Banner Yönetimi
             </button>
 
             <button
@@ -118,7 +118,7 @@ export default function AdminPanel() {
       : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
     } focus:z-10 focus:ring-2 focus:ring-orange-300`}
     >
-    İndirim Kodları
+    % İndirim Kodları
     </button>
 
 
@@ -141,7 +141,7 @@ export default function AdminPanel() {
                     </div>
                     <div className="ml-5 w-0 flex-1">
                       <dl>
-                        <dt className="text-sm font-medium text-gray-500 truncate">Menü İşlemleri</dt>
+                        <dt className="text-sm font-medium text-gray-500 truncate">🛎️Menü İşlemleri</dt>
                         <dd>
                           <div className="text-lg font-medium text-gray-900">Menü düzenle</div>
                         </dd>
@@ -163,7 +163,7 @@ export default function AdminPanel() {
                     </div>
                     <div className="ml-5 w-0 flex-1">
                       <dl>
-                        <dt className="text-sm font-medium text-gray-500 truncate">Banner İşlemleri</dt>
+                        <dt className="text-sm font-medium text-gray-500 truncate">📢Banner İşlemleri</dt>
                         <dd>
                           <div className="text-lg font-medium text-gray-900">Banner yönet</div>
                         </dd>
@@ -186,7 +186,7 @@ export default function AdminPanel() {
                     </div>
                     <div className="ml-5 w-0 flex-1">
                       <dl>
-                        <dt className="text-sm font-medium text-gray-500 truncate">Kullanıcı İşlemleri</dt>
+                        <dt className="text-sm font-medium text-gray-500 truncate">👥Kullanıcı İşlemleri</dt>
                         <dd>
                           <div className="text-lg font-medium text-gray-900">Kullanıcıları yönet</div>
                         </dd>
@@ -207,7 +207,7 @@ export default function AdminPanel() {
                     </div>
                     <div className="ml-5 w-0 flex-1">
                       <dl>
-                        <dt className="text-sm font-medium text-gray-500 truncate">Şifre İşlemleri</dt>
+                        <dt className="text-sm font-medium text-gray-500 truncate">🔒Şifre İşlemleri</dt>
                         <dd>
                           <div className="text-lg font-medium text-gray-900">Şifre değiştir</div>
                         </dd>
@@ -228,7 +228,7 @@ export default function AdminPanel() {
                     </div>
                     <div className="ml-5 w-0 flex-1">
                       <dl>
-                        <dt className="text-sm font-medium text-gray-500 truncate">Sipariş İşlemleri</dt>
+                        <dt className="text-sm font-medium text-gray-500 truncate">📦Sipariş İşlemleri</dt>
                         <dd>
                           <div className="text-lg font-medium text-gray-900">Siparişleri yönet</div>
                         </dd>
@@ -248,25 +248,25 @@ export default function AdminPanel() {
                       </svg>
                     </div>
                     <div className="ml-5">
-                      <h3 className="text-lg font-medium text-gray-900">Mesajlaşma Sistemi</h3>
+                      <h3 className="text-lg font-medium text-gray-900">📩 Mesajlaşma Sistemi</h3>
                       <p className="text-sm text-gray-500">Site genelinde mesajlaşma hizmetlerini yönetin</p>
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <button
-                    style={{ width: '150px' }}
+                    style={{ width: '165px' }}
                       onClick={() => setActiveTab('forum')}
                       className="bg-orange-500 text-white py-2 px-4 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-colors duration-200"
                     >
-                      Genel Sohbet
+                      🗫️ Genel Sohbet
                     </button>
                     <button
-                    style={{width:'150px'}}
+                    style={{width:'165px'}}
                       onClick={() => setActiveTab('direct')}
                       className="bg-orange-500 text-white py-2 px-4 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 transition-colors duration-200"
                     >
-                      Özel Mesajlar
+                      🗪 Özel Mesajlar
                     </button>
                   </div>
                 </div>
@@ -274,7 +274,7 @@ export default function AdminPanel() {
             </div>
             <Link href="/admin/clean">
         <button className="bg-red-600 text-white px-4 py-2 rounded">
-          Sistemi Temizle
+          🗑️ Sistemi Temizle
         </button>
       </Link>
           </div>
